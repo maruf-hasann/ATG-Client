@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.blue {
+  color: #2f6ce5;
+}
+.react-tabs__tab {
+  color:#8A8A8A ;
+}
+.react-tabs__tab-list {
+    border-bottom: 1px solid #aaa;
+    margin: 0 0 10px;
+    padding: 0;
+    border: none;
+}
+.gray_text {
+  color: #8a8a8a;
+}
+.src_area {
+  background-color: #f2f2f2;
+  color: #5c5c5c;
+  font-size: 14px;
+ width: 360px;
+  text-align: center;
+  padding: 12px 0px;
+  border-radius: 21px;
+  font-weight: 500;
+ 
+}
+.profileSection {
+  
+  display: flex;
+  
+
+  
+}
+/* Hero Section */
+.hero {
+  background-image: url("./assets//Hero/hero.png");
+  background-repeat: none;
+  object-fit: cover;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  height: 440px;
+  margin-bottom: 47px;
+}
+.hero-mobile {
+  background-image: url('./assets//Hero/Group449.png');
+ height: 236px !important;
+ 
+}
+.join {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 6px 12px;
+  color: white;
+}
+.hero-heading {
+  font-size: 2.25rem;
+}
+.hero-info {
+  font-size: 1.125rem;
+}
+.hero_text {
+  height: 400px;
+}
+/* Card */
+.filter {
+ width: 106px;
+ font-weight: 700;
+ background-color:#f1f3f5 ;
+ padding: 8px 0px;
+ text-align: center;
+
+}
+.btn_left {
+  border: none;
+  background: #edeef0 ;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px  12px;
+  border-radius: 8px;
+  margin-right: 16px;
+
+}
+.leave_btn{
+   border: 2px solid #cbcbcc;
+  background: white ;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px  12px;
+  color: #6A6A6B;
+   border-radius: 8px;
+}
+.btn_blue {
+  border: none;
+  background: #2f6ce5 ;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px  12px;
+  color: #ffffff;
+   border-radius: 8px;
+}
+.card {
+  border: 2px solid red #e0e0e0;
+  margin-bottom: 1rem;
+ 
+}
+
+.category p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.card-title {
+  font-size: 22px !important;
+  font-weight: 600 !important ;
+  width: 80%;
+  color: #000000 !important;
+}
+.card-text {
+  font-size: 19px;
+  color: #5c5c5c;
+}
+.author_name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+.view {
+  font-size: 14px;
+  color: #525252;
+  font-weight: 600;
+  margin-top: 13px;
+}
+.dateArea {
+  margin-top: 12px !important;
+  margin-bottom: 16px !important;
+}
+.date {
+  margin-right: 40px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.hr {
+    width: 190px;
+}
+.d-flex.justify-content-between.location_area {
+    width: 190px;
+}
+.location {
+  font-size: 15px;
+  font-weight: 500;
+}
+.job button {
+  border: 1px solid #a9aeb8;
+  background: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #02b875;
+  font-weight: 800 !important;
+  margin-top:16px ;
+  margin-bottom: 32px;
+}
+.job button {
+  border: 1px solid #a9aeb8;
+  background: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #02b875;
+  font-weight: 800 !important;
+}
+.meetup button {
+  border: 1px solid #a9aeb8;
+  background: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #e56135;
+  font-weight: 800 !important;
+  margin-bottom: 32px;
+}
+.jobIcon {
+    margin: 20px 0px;
+}
+
+/* From */
+.from_input {
+  width: 320px;
+  height: 46px;
+  background:#f7f8fa ;
+  border:1px solid #D9D9DB;
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 12px;
+}
+.full_btn {
+   width: 320px;
+  background: #2f6ce5;
+  color: #ffffff;
+  padding: 12px 0px;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+
+}
+.form_header.modal-header {
+    background: #effff4;
+    border: none;
+ 
+}
+
+.form_header h3 {
+  font-size: 14px;
+  color: #008A45;
+  font-weight: 500;
+  background-color:#effff4 ;
+  margin: 0 auto;
+}
+.modal-body {
+    padding: 36px !important;
+}
+
+/*  */
+.social_btn {
+  margin-top: 24px;
+}
+.forgot {
+  width: 320px;
+  border: none;
+  background-color: white;
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 12px;
+}
+.sign_in {
+    font-size: 24px !important;
+    font-weight: 700;  
+    margin-bottom: 24px;   
+}
+.social_btn button {
+  border: 1px solid #d9d9db;
+  background-color: white;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  padding: 11px 0px;
+  width:320px ;
+  margin-bottom: 8px;
+ 
+}
+.form-image h4 {
+font-size: 13px;
+color: #3D3D3D;
+}
+.form-image h4 strong{
+  color: #2f6ce5;
+  cursor: pointer;
+}
+p.form_buttom {
+    font-size: 11px;
+}
+.d-flex.name_area {
+    width: 320px ;
+}
+.name_area input {
+  width: 50%;
+}
+/* user area */
+.user_area {
+  width: 350px;
+}
+.user_area .error {
+  font-size: 12px;
+}
+.user_info {
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
