@@ -4,7 +4,7 @@ import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import TabCard from "./TabCard";
-import { AuthContext } from "../../../AuthProvider/AuthProvider";
+
 import { MdArrowDropDown, MdExitToApp } from "react-icons/md";
 import locationIcon from '../../../assets/Icon/outline-location_on-24px 2.png'
 import groupIcon from '../../../assets/Icon/baseline-group_add-24px.png'
@@ -23,7 +23,7 @@ const TabSection = () => {
       .then((data) => setPosts(data));
   }, [])
   // console.log(posts);
-const {user} = useContext(AuthContext)
+const user = true
   return (
     <Container>
       <Row>

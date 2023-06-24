@@ -17,7 +17,7 @@ const Hero = () => {
           </Container>
         </div>
 
-        <div className="bg-danger d-lg-none hero-mobile mb-4">
+        <div className=" d-lg-none hero-mobile mb-4">
           <Container>
             <div className='d-flex justify-content-between py-4'>
               <div><AiOutlineArrowLeft className='text-white ' size='30'/></div>
@@ -25,8 +25,8 @@ const Hero = () => {
                 <button className='join'>Join Group</button>
               </div>
             </div>
-            <div >
-              <h2 className="fw-bold text-white hero-heading">
+            <div className='hero-mobile-text'>
+              <h2 className="fw-bold text-white">
                 Computer Engineering
               </h2>
               <p className="text-white hero-info">

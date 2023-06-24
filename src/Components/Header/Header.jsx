@@ -6,17 +6,16 @@ import { BsSearch, BsFacebook } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import { MdArrowDropDown } from "react-icons/md";
 import loginImage from '../../assets/Login/Group 3.png'
-import { AuthContext } from "../../AuthProvider/AuthProvider";
+
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 // import { useForm, SubmitHandler } from "react-hook-form";
 
 const Header = () => {
-  const { createUser, loginGoogle, signIn, logOut,user } = useContext(AuthContext);
-  console.log(user);
+
   const [show, setShow] = useState(false);
   const [log, setLog] = useState(false);
-  console.log(log);
+ 
 
 
   const handleClose = () => setShow(false);
@@ -28,21 +27,8 @@ const Header = () => {
     const form = event.target
     const email = form.email.value;
     const password = form.password.value;
-    createUser(email, password)
-      .then(result => {
-        const user = result.user;
-        if (user) {
-          Swal.fire({
-            position: "top-end",
-            icon: "success",
-            title: "User created Done",
-            showConfirmButton: false,
-            timer: 1500,
-          });
-        }
-      
-      })
-    .catch(err => console.log(err))
+    
+    
 
   }
      const {
@@ -52,23 +38,9 @@ const Header = () => {
        formState: { errors },
      } = useForm();
   const onSubmit = (data) => {
-    signIn(data.email, data.password)
-      .then(data => {
-      console.log(data);
-      })
-      .catch(err => {
-      console.log(err)
-    })
+   
   }
-  const handleGoogle = () => {
-    loginGoogle()
-      .then(result => {
-      const user = result.user
-      })
-      .catch(err => {
-      console.log(err);
-    })
-  }
+ 
   return (
     <Container className="my-3 d-lg-block  d-none">
       <Row>
@@ -85,33 +57,14 @@ const Header = () => {
             Search for your favorite groups in ATG
           </div>
         </Col>
-        <Col>
-          {user ? (
-            <div className="profileSection">
-              <div>
-                {" "}
-                <img
-                  src={user?.photoURL}
-                  alt=""
-                  width="36px"
-                  className="me-2"
-                />
-              </div>
-              <div>
-                <p className="login_btn mt-1 " onClick={handleShow}>
-                  {user?.displayName} <MdArrowDropDown />
-                </p>
-              </div>
-            </div>
-          ) : (
-            <p className="login_btn" onClick={handleShow}>
-              Create account.
-              <strong className="fw-bold blue">
-                It's free! <MdArrowDropDown size="33px" />
-              </strong>
-            </p>
-          )}
 
+        <Col>
+          <p className="login_btn" onClick={handleShow}>
+            Create account.
+            <strong className="fw-bold blue">
+              It's free! <MdArrowDropDown size="33px" />
+            </strong>
+          </p>
           {log === true ? (
             <Modal show={show} onHide={handleClose} size="lg">
               <Modal.Header closeButton className="form_header">
@@ -153,7 +106,7 @@ const Header = () => {
                           <BsFacebook size="16px" className="me-2" />
                           Sign in with Facebook
                         </button>
-                        <button onClick={handleGoogle}>
+                        <button onClick={""}>
                           <FcGoogle size="16px" className="me-2" />
                           Sign in with Google
                         </button>
@@ -239,7 +192,7 @@ const Header = () => {
                           <BsFacebook size="16px" className="me-2" />
                           Sign in with Facebook
                         </button>
-                        <button onClick={handleGoogle}>
+                        <button onClick={""}>
                           <FcGoogle size="16px" className="me-2" />
                           Sign in with Google
                         </button>
